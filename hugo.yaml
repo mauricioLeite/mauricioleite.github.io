@@ -1,5 +1,15 @@
 # Hugo configuration file
-title: My Site
+title: MauricioFerreia
+
+languageCode: "pt-BR"
+defaultContentLanguage: "pt-br"
+#baseURL: "htps://www.mauricioferreira.com/"
+enableEmoji: true
+
+languages:
+  pt-br:
+    languageName: "Portugues"
+    weight: 1
 
 # import hextra as module
 module:
@@ -18,29 +28,22 @@ markup:
 
 menu:
   main:
-    - name: Docs
-      pageRef: /docs
-      weight: 1
+    - name: theme
+      weight: 0
+      params:
+        type: theme-toggle
     - name: About
       pageRef: /about
-      weight: 2
-    - name: Contact ↗
-      url: "https://github.com/imfing"
-      weight: 3
+      weight: 1
     - name: Search
-      weight: 4
+      weight: 2
       params:
         type: search
     - name: GitHub
-      weight: 5
-      url: "https://github.com/imfing/hextra-starter-template"
+      weight: 3
+      url: "https://github.com/mauricioLeite"
       params:
         icon: github
-    - name: Twitter
-      weight: 6
-      url: "https://twitter.com/"
-      params:
-        icon: x-twitter
 
 params:
   navbar:
@@ -48,9 +51,18 @@ params:
     displayLogo: false
 
   footer:
-    displayCopyright: false
+    displayCopyright: true
     displayPoweredBy: true
 
   editURL:
-    enable: true
+    enable: false
     base: "https://github.com/imfing/hextra-starter-template/edit/main/content"
+
+  theme:
+    default: light
+
+  author:
+    name: Mauricio Ferreira
+    email: mauricioleite.fe@gmail.com
+
+  description: "Blog voltado para publicação dos meus conteúdos de estudos próprios."
