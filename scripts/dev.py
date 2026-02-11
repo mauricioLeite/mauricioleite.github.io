@@ -47,8 +47,8 @@ def new_post(title):
     now = datetime.now()
 
     base_path = now.strftime('%Y/%m/%d')
-    title = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
-    new_dir = Path(f"content/{base_path}/{title}")
+    slug = re.sub(r'[^a-z0-9]+', '-', title.lower()).strip('-')
+    new_dir = Path(f"content/{base_path}/{slug}")
 
     print_message(f"Creating post: {new_dir}")
 
@@ -57,6 +57,7 @@ def new_post(title):
     body = textwrap.dedent(f"""\
         ---
         title: "{title}"
+        slug: "{slug}"
         date: {now.strftime('%Y-%m-%dT%H:%M:%S%z')}
         draft: false
         description: "Post description here"
