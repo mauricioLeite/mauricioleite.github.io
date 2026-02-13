@@ -1,6 +1,8 @@
 ---
-title: All Posts
+title: Mauricio's Blog
 description: Browse all blog posts
 ---
 
-Page where I want to list every entry organized by date.
+## 2026 - February
+
+- [Crash Course em Criptografia Homomórfica](2026/02/11/crash-course-em-criptografia-homomorfica)

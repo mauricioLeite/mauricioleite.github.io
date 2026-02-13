@@ -22,7 +22,7 @@ def print_error(err):
 
 def start_dev():
     print_message("Starting environmnet...")
-    subprocess.run(['docker', 'compose', 'up', '--build', '-d'], check=True)
+    subprocess.run(['docker', 'compose', 'up', '-d'], check=True)
     print_message("Server: http://localhost:1313")
 
 def stop_dev():
