@@ -14,6 +14,6 @@ services:
     command: >
       sh -c "
         cd /app &&
-        hugo server --logLevel debug --disableFastRender -p 1313 --bind 0.0.0.0 --watch
+        hugo server -D --logLevel debug --disableFastRender -p 1313 --bind 0.0.0.0 --watch
       "
     restart: unless-stopped
